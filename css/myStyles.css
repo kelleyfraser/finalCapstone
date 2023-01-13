@@ -1,0 +1,438 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bitter&family=Roboto&display=swap');
+
+/* ================= Theme colors ================== */
+:root {
+  --color-primary: #595452;
+  --color-light: #fff9f4;
+  --color-light_border: #d4d3d2;
+  --color-accent: #507255;
+}
+
+/* ================= Setup ================== */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  margin: 0;
+  width: 100%;
+}
+
+body {
+  background-color: var(--color-light);
+  color: var(--color-primary);
+  font-family: 'Roboto';
+  font-size: 1.3rem;
+  margin: 0;
+  width: 100%;
+}
+
+section {
+  margin-bottom: 50px;
+  padding: 0 30px;
+}
+
+main {
+  margin-bottom: 20px;
+  min-height: calc(100vh - 153px);
+}
+
+img {
+  border-radius: 3px;
+}
+
+blockquote {
+  border-left: 3px solid var(--color-accent);
+  padding: 5px 15px;
+}
+
+/* ================= Typography ================== */
+h1,
+h2,
+h3 {
+  color: var(--color-primary);
+  font-family: 'Bitter';
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 400;
+  text-align: left;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 20px 10px 6px 10px;
+}
+
+p {
+  color: var(--color-primary);
+  font-size: 1.4rem;
+}
+
+a {
+  color: var(--color-primary);
+  font-size: 1.4rem;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+/* ================= Buttons ================== */
+button {
+  background-color: var(--color-accent);
+  border-radius: 20px;
+  border: 0;
+  color: var(--color-light);
+  font-size: 1.5rem;
+  margin: 8px auto;
+  padding: 6px 10px;
+  width: 100px;
+}
+
+/* ================= Forms ================== */
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+form h2 {
+  margin-bottom: 10px;
+}
+
+input {
+  border-radius: 5px;
+  border: 1px solid var(--color-light_border);
+  color: var(--color-primary);
+  font-family: 'Roboto';
+  margin-top: 6px;
+  padding: 10px 6px;
+}
+
+textarea {
+  border-radius: 5px;
+  border: 1px solid var(--color-light_border);
+  color: var(--color-primary);
+  font-family: 'Roboto';
+  margin-top: 6px;
+  padding: 10px 6px;
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.radio-group_item {
+  margin-bottom: 10px;
+}
+
+label {
+  margin-top: 10px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/* ================= Lists ================= */
+ul {
+  margin: 0;
+}
+
+/* ================= Tables ================= */
+th {
+  border-bottom: 1px solid var(--color-primary);
+  padding: 5px 55px;
+}
+
+td {
+  padding: 5px 0;
+  text-align: center;
+}
+
+/* ================= Navbar ================== */
+nav {
+  border-bottom: 0.5px solid var(--color-light_border);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logo {
+  margin: 10px 20px;
+}
+
+.logo img {
+  width: 100px;
+}
+
+.navbar {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.navbar_item {
+  font-family: 'Bitter';
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+/* ================= Articles ================== */
+.articles {
+  width: 100%;
+}
+
+.articles-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.article-link {
+  text-decoration: none;
+}
+
+.article-card {
+  border-radius: 5px;
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+  margin: 10px 20px;
+  width: 250px;
+}
+
+.article-heading {
+  max-height: 70px;
+  min-height: 70px;
+  padding: 12px 10px 10px 10px;
+  text-align: center;
+}
+
+.article-heading h3 {
+  font-size: 1.2rem;
+  margin-top: 15px;
+}
+
+.article-btns {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.article-btns:hover {
+  cursor: pointer;
+}
+
+.article-btns .clicked {
+  background-color: #507255;
+}
+
+.article-btns div {
+  background-color: #595452;
+  margin: 2px auto;
+  text-align: center;
+  width: 49%;
+}
+
+.article-btns p {
+  color: white;
+  font-size: 12px;
+}
+
+.article-img {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  min-height: 230px;
+  width: 250px;
+}
+
+.article-img_large {
+  display: flex;
+  margin: 40px auto;
+  width: 70%;
+}
+
+
+/* ================= Footer ================== */
+footer {
+  background: var(--color-primary);
+  color: var(--color-light);
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+}
+
+footer p {
+  color: var(--color-light);
+  font-family: 'Bitter';
+  font-size: 1.2rem;
+}
+
+/* ================= Hero section ================== */
+.hero {
+  align-items: center;
+  display: flex;
+  height: 600px;
+  background: url(../images/farmhouse.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: space-between;
+  padding: 10px;
+  width: 100%;
+}
+
+.hero-content {
+  align-items: center;
+  background-color: var(--color-light);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+  max-width: 600px;
+  padding: 30px;
+  width: 40%;
+}
+
+.hero-content h1 {
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+
+@media screen and (max-width: 850px) {
+  .hero-content {
+    width: 60%;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+/* ================= About section ================== */
+.about {
+  margin-bottom: 50px;
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 0 50px;
+}
+
+.about p {
+  text-align: left;
+}
+
+/* ================= Sign up section ================== */
+.sign-up {
+  width: 100%;
+}
+
+.sign-up_container {
+  background: var(--color-accent);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding: 15px 25px;
+  width: 80%;
+}
+
+.sign-up_text {
+  color: var(--color-light);
+  padding: 10px 20px;
+}
+
+.sign-up_text h2 {
+  color: var(--color-light);
+}
+
+.sign-up_text p {
+  color: var(--color-light);
+}
+
+.sign-up_form {
+  background: var(--color-light);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  padding: 10px;
+}
+
+.sign-up_form h3 {
+  margin: 8px;
+}
+
+.sign-up_form input {
+  margin: 4px 0;
+}
+
+@media screen and (max-width: 600px) {
+  .sign-up_container {
+    flex-direction: column;
+  }
+
+  .sign-up_form {
+    margin-left: 0;
+  }
+}
+
+/* ================= Topic pages ================== */
+.article-content {
+  margin-bottom: 50px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+.article-btns_container {
+  margin: 15px auto 30px auto;
+  width: 250px;
+}
+
+.article-content h1 {
+  margin-bottom: 0px;
+  margin-top: 50px;
+}
+
+/* ================= Comment sections ================== */
+
+.comments-section {
+  margin: 20px;
+}
+
+.comment-container {
+  margin: 30px auto;
+  width: 90%;
+}
+
+.comment-author {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.comment-date {
+  font-size: 10px;
+  font-style: italic;
+  margin-top: 5px;
+}

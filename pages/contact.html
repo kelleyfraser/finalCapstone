@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback - Fox Grove Homestead</title>
+  <link rel="stylesheet" href="../css/myStyles.css">
+</head>
+
+<body>
+  <!------------------ Navbar section ------------------->
+  <nav>
+    <div class="logo">
+      <a href="../index.html"><img src="../images/logo.png" alt="logo"></a>
+    </div>
+    <div class="navbar">
+      <a href="../index.html" class="navbar_item">home</a>
+      <a href="./gardening.html" class="navbar_item">gardening</a>
+      <a href="./preservation.html" class="navbar_item">preservation</a>
+      <a href="./contact.html" class="navbar_item">contact</a>
+      <a href="./saveForLater.html" class="navbar_item">reading list</a>
+    </div>
+  </nav>
+  <!------------------ Main content section ------------------->
+  <main>
+    <!-- Contact form -->
+    <section>
+      <h1>Contact us</h1>
+      <form>
+        <label>Name</label>
+        <input required>
+        <label>Email</label>
+        <input type="email" required>
+        <label>Message</label>
+        <textarea rows="4" required></textarea>
+        <button>Submit</button>
+      </form>
+    </section>
+    <!-- Feedback form -->
+    <section>
+      <h1>Tell us what you think:</h1>
+      <form class="feedback-form">
+        <fieldset>
+          <legend>Which content is your favorite?</legend>
+          <div class="radio-group">
+            <div class="radio-group_item">
+              <input type="radio" id="gardening" value="gardening" name="favContent">
+              <label for="gardening">Gardening</label>
+            </div>
+            <div class="radio-group_item">
+              <input type="radio" id="preservation" value="preservation" name="favContent">
+              <label for="preservation">Preservation</label>
+            </div>
+            <div class="radio-group_item">
+              <input type="radio" id="other" value="other" name="favContent">
+              <label for="other">Other</label>
+            </div>
+            <label for="other-text">If other:</label>
+            <input type="text" id="other-text">
+          </div>
+        </fieldset>
+        <label for="comments">Additional comments:</label>
+        <textarea id="comments" rows="6"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+  <!------------------ Footer section ------------------->
+  <footer>
+    <p>&copy; 2022 Fox Grove Homestead</p>
+  </footer>
+</body>
+
+</html>

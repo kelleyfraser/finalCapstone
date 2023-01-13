@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Controlling Pests in the Garden</title>
+  <link rel="stylesheet" href="../../css/myStyles.css">
+</head>
+
+<body onload="loadArticle(3); loadComments();">
+  <!------------------ Navbar section ------------------->
+  <nav>
+    <div class="logo">
+      <a href="./index.html"><img src="../../images/logo.png" alt="logo"></a>
+    </div>
+    <div class="navbar">
+      <a href="../../index.html" class="navbar_item">home</a>
+      <a href="../gardening.html" class="navbar_item">gardening</a>
+      <a href="../preservation.html" class="navbar_item">preservation</a>
+      <a href="../contact.html" class="navbar_item">contact</a>
+      <a href="../saveForLater.html" class="navbar_item">reading list</a>
+    </div>
+  </nav>
+  <!-------------------- Main section -------------------->
+  <main>
+    <!-- Article content -->
+    <section class="article-content">
+      <h1>Controlling Pests in the Garden</h1>
+      <div class="article-btns_container" id="article-btns_container"> </div>
+      <p>
+        Amet risus nullam eget felis eget. Morbi non arcu risus quis varius quam quisque. Bibendum neque egestas congue
+        quisque
+        egestas diam. Turpis tincidunt id aliquet risus feugiat in. Ut sem viverra aliquet eget. Sit amet nulla facilisi
+        morbi
+        tempus. Felis donec et odio pellentesque. Egestas maecenas pharetra convallis posuere morbi leo urna. Lacus sed
+        viverra
+        tellus in hac habitasse platea dictumst. Nulla facilisi nullam vehicula ipsum a arcu. Id venenatis a condimentum
+        vitae
+        sapien pellentesque habitant. Fermentum odio eu feugiat pretium nibh ipsum.
+      </p>
+      <img class="article-img_large" src="../../images/pestControl.jpg">
+      <p>
+        Tristique senectus et netus et malesuada fames. Aliquam vestibulum morbi blandit cursus risus at ultrices mi
+        tempus.
+        Nibh cras pulvinar mattis nunc sed. Lorem ipsum dolor sit amet consectetur adipiscing elit ut. Quis eleifend
+        quam
+        adipiscing vitae proin sagittis nisl. Porttitor eget dolor morbi non arcu risus quis varius. Quis varius quam
+        quisque id
+        diam vel quam elementum. Id semper risus in hendrerit gravida rutrum quisque. Vestibulum mattis ullamcorper
+        velit sed.
+        Scelerisque in dictum non consectetur a erat nam at lectus.
+      </p>
+      <p>
+        Faucibus turpis in eu mi bibendum neque egestas congue. In fermentum et sollicitudin ac orci phasellus egestas
+        tellus
+        rutrum. Duis at consectetur lorem donec massa sapien faucibus et molestie. Fermentum et sollicitudin ac orci
+        phasellus
+        egestas tellus. Aliquet eget sit amet tellus cras. Suspendisse ultrices gravida dictum fusce ut placerat orci
+        nulla. Est
+        ante in nibh mauris cursus mattis molestie a. Neque aliquam vestibulum morbi blandit. Adipiscing commodo elit at
+        imperdiet dui accumsan sit amet nulla. Nunc faucibus a pellentesque sit. Dapibus ultrices in iaculis nunc sed
+        augue
+        lacus viverra vitae. Nibh sed pulvinar proin gravida hendrerit lectus. Sed vulputate odio ut enim blandit.
+      </p>
+    </section>
+    <!-- Comments section -->
+    <section class="comments-section">
+      <!-- Comments list -->
+      <h2>Comments</h2>
+      <div id="comments"> </div>
+      <!-- Comment form -->
+      <form>
+        <h2>Leave a comment:</h2>
+        <label>Name</label>
+        <input id="author">
+        <label>Message</label>
+        <textarea id="message" rows="4"></textarea>
+        <button id="post-comment">Post</button>
+      </form>
+    </section>
+  </main>
+  <!------------------ Footer section ------------------->
+  <footer>
+    <p>&copy; 2022 Fox Grove Homestead</p>
+  </footer>
+  <script type="text/javascript" src="../../js/articles.js"></script>
+  <script type="text/javascript" src="../../js/comments.js"></script>
+</body>
+
+</html>
