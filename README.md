@@ -4,8 +4,8 @@ This project was created as a final capstone project for the HyperionDev Web Dev
 
 ## Table of Contents
 
-- Getting Started
-- Usage
+- [Getting Started](#getting-started--installation)
+- [Usage](#usage)
 
 ## Getting Started / Installation
 
