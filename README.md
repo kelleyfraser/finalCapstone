@@ -7,7 +7,7 @@ This project was created as a final capstone project for the HyperionDev Web Dev
 - Getting Started
 - Usage
 
-### Getting Started / Installation
+## Getting Started / Installation
 
 1. Clone the respository
 
@@ -19,7 +19,7 @@ This project was created as a final capstone project for the HyperionDev Web Dev
 
 2. Use live server to open index.html
 
-#### Usage
+## Usage
 
 You can save or like articles on this fake blog by clicking on the Save or Like buttons either on the article card found under the corresponding category pages or on each individual article page. 
 
